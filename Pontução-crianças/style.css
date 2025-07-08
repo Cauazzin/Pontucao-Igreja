@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lado {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 125px;
+}
+
+.azul {
+  background-color: #2196f3;
+}
+
+.rosa {
+  background-color: #e91e63;
+}
+
+.pontuacao {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pontuacao button {
+  font-size: 40px;
+  margin: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.pontuacao button:hover {
+  background: #ddd;
+}
+
+.pontuacao span {
+  font-size: 200px;
+  margin: 10px 0;
+}
+
+.botao-extra {
+  margin-top: 10px;
+}
+
+.botao-extra button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.botao-extra button:hover {
+  background-color: #ddd;
+}
+
+.resultado {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.resultado p {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.resultado button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.resultado button:hover {
+  background-color: #666;
+}
+
+.pontuacao span.animado {
+  animation: pulo 0.4s ease;
+}
+
+@keyframes pulo {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+.coroa {
+  font-size: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}

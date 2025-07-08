@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competição Meninos vs Meninas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="lado azul">
+            <div class="coroa" id="coroa-meninos"></div>
+            <h2>MENINOS</h2>
+            <div class="pontuacao">
+                <button onclick="alterarPontuacao('meninos', 1)">▲</button>
+                <span id="pontuacao-meninos">0</span>
+                <button onclick="alterarPontuacao('meninos', -1)">▼</button>
+                <div class="botao-extra">
+                    <button onclick="alterarPontuacao('meninos', 10)">+10</button>
+                    <button onclick="alterarPontuacao('meninos', 15)">+15</button>
+                    <button onclick="alterarPontuacao('meninos', 20)">+20</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lado rosa">
+            <div class="coroa" id="coroa-meninas"></div>
+            <h2>MENINAS</h2>
+            <div class="pontuacao">
+                <button onclick="alterarPontuacao('meninas', 1)">▲</button>
+                <span id="pontuacao-meninas">0</span>
+                <button onclick="alterarPontuacao('meninas', -1)">▼</button>
+                <div class="botao-extra">
+                    <button onclick="alterarPontuacao('meninas', 10)">+10</button>
+                    <button onclick="alterarPontuacao('meninas', 15)">+15</button>
+                    <button onclick="alterarPontuacao('meninas', 20)">+20</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resultado">
+        <p id="mensagem-resultado">Vamos ver quem vai vencer!</p>
+        <button onclick="resetarPontuacoes()">Resetar</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
